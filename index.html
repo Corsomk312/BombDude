@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.51.0/dist/phaser-arcade-physics.min.js"></script> 
+</head>
+<body>
+
+    <script>
+        var config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 600,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 200 }
+                }
+            },
+            scene: {
+                preload: preload,
+                create: create
+            }   
+        }; 
+
+        var game = new.Phaser.Game(config);
+
+        this.load.setBaseURL('https://labs.phaser.io');
+
+        this.load.image('grid', 'assets/grid.png');
+
+
+
+    </script>
+
+</body>
+</html>
